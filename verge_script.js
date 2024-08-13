@@ -2,7 +2,7 @@
 //
 // Clash Verg Rev Version ≥ 1.7.2
 //
-// 最后更新时间: 2024-08-02 12:00
+// 最后更新时间: 2024-08-13 17:30
 
 // 规则集通用配置
 const ruleProviderCommon = {
@@ -164,9 +164,18 @@ function main(config) {
       ...groupBaseOption,
       "name": "手动切换",
       "type": "select",
-      "proxies": ["香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
       "include-all": true,
+      "proxies": ["自动切换"],
       "icon": "https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src-tauri/icons/icon.png"
+    },
+    {
+      ...groupBaseOption,
+      "name": "自动切换",
+      "type": "url-test",
+      "tolerance": 50,
+      "include-all": true,
+      "filter": "(?i)^(?!.*\\*).*",
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png"
     },
     {
       ...groupBaseOption,
