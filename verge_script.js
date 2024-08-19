@@ -14,7 +14,8 @@ const ruleProviderCommon = {
 // 策略组通用配置
 const groupBaseOption = {
   "interval": 300,
-  "url": "http://latency-test.skk.moe/endpoint",
+  "url": "http://www.gstatic.com/generate_204",
+  // "url": "http://latency-test.skk.moe/endpoint",
   "max-failed-times": 3,
 };
 
@@ -166,7 +167,7 @@ function main(config) {
       "type": "select",
       "include-all": true,
       "proxies": ["自动切换"],
-      "icon": "https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src-tauri/icons/icon.png"
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png"
     },
     {
       ...groupBaseOption,
@@ -174,7 +175,8 @@ function main(config) {
       "type": "url-test",
       "tolerance": 50,
       "include-all": true,
-      "filter": "(?i)^(?!.*\\*).*",
+      // "filter": "(?i)^(?!.*\\*).*",
+      "filter": "^(?!.*\\*)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png"
     },
     {
