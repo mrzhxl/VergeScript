@@ -2,7 +2,7 @@
 //
 // Clash Verg Rev Version ≥ 1.7.2
 //
-// 最后更新时间: 2024-08-13 17:30
+// 最后更新时间: 2024-08-27 18:16
 
 // 规则集通用配置
 const ruleProviderCommon = {
