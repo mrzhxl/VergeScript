@@ -167,7 +167,7 @@ function main(config) {
       "type": "select",
       "include-all": true,
       "proxies": ["自动切换"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png"
+      "icon": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png"
     },
     {
       ...groupBaseOption,
@@ -177,7 +177,7 @@ function main(config) {
       "include-all": true,
       // "filter": "(?i)^(?!.*\\*).*",
       "filter": "^(?!.*\\*)",
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png"
+      "icon": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png"
     },
     {
       ...groupBaseOption,
