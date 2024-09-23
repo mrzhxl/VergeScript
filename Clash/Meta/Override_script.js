@@ -1,4 +1,4 @@
-// 最后更新时间: 2024-09-06 14:12
+// 最后更新时间: 2024-09-23
 
 // 规则集通用配置
 const ruleProviderCommon = {
@@ -38,7 +38,7 @@ function main(config) {
   // 覆盖 dns 配置
   config["dns"] = {
     "enable": true,
-    "listen": "0.0.0.0:1053",
+    "listen": "127.0.0.1:1053",
     "ipv6": false,
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "198.18.0.1/16",
@@ -50,6 +50,10 @@ function main(config) {
       "geosite:gfw,geolocation-!cn": ["quic://223.5.5.5", "quic://223.6.6.6", "https://1.12.12.12/dns-query", "https://120.53.53.53/dns-query"]
     }
   };
+  // 删除 hosts 配置
+  if (config.hasOwnProperty('hosts')) {
+    delete config['hosts'];
+  }
 
   // 覆盖 geodata 配置
   config["geodata-mode"] = true;
