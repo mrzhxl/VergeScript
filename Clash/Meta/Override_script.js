@@ -96,6 +96,7 @@ function main(config) {
       "name": "手动切换",
       "type": "select",
       "include-all": true,
+      "exclude-filter": "(?i)应急|剩余|过期",
       "proxies": ["自动切换"],
       "icon": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png"
     },
@@ -105,7 +106,7 @@ function main(config) {
       "type": "url-test",
       "tolerance": 50,
       "include-all": true,
-      "filter": "^(?!.*\\*)",
+      "exclude-filter": "(?i).*\\*.*|应急|剩余|过期",
       "icon": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png"
     },
     {
