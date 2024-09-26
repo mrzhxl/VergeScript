@@ -20,7 +20,6 @@ const regionBaseOption = {
   "type": "url-test",
   "tolerance": 0,
   "include-all": true,
-  "exclude-filter": "(?i)应急|剩余|过期",
 }
 
 // 程序入口
