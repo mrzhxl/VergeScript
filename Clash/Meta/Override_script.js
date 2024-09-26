@@ -1,7 +1,8 @@
-// 最后更新时间: 2024-09-23
+// 最后更新时间: 2024-09-26
 
 // 规则集通用配置
 const ruleProviderCommon = {
+  "behavior": "classical",
   "type": "http",
   "format": "text",
   "interval": 86400
@@ -13,6 +14,14 @@ const groupBaseOption = {
   "url": "http://connectivitycheck.gstatic.com/generate_204",
   "max-failed-times": 3,
 };
+
+// 地区分组通用配置
+const regionBaseOption = {
+  "type": "url-test",
+  "tolerance": 0,
+  "include-all": true,
+  "exclude-filter": "(?i)应急|剩余|过期",
+}
 
 // 程序入口
 function main(config) {
@@ -189,55 +198,43 @@ function main(config) {
     // 地区分组
     {
       ...groupBaseOption,
+      ...regionBaseOption,
       "name": "香港节点",
-      "type": "url-test",
-      "tolerance": 0,
-      "include-all": true,
       "filter": "(?i)🇭🇰|香港|(\b(HK|Hong)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"
     },
     {
       ...groupBaseOption,
+      ...regionBaseOption,
       "name": "美国节点",
-      "type": "url-test",
-      "tolerance": 0,
-      "include-all": true,
       "filter": "(?i)🇺🇸|美国|(\b(US|United States)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png"
     },
     {
       ...groupBaseOption,
+      ...regionBaseOption,
       "name": "狮城节点",
-      "type": "url-test",
-      "tolerance": 0,
-      "include-all": true,
       "filter": "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png"
     },
     {
       ...groupBaseOption,
+      ...regionBaseOption,
       "name": "日本节点",
-      "type": "url-test",
-      "tolerance": 0,
-      "include-all": true,
       "filter": "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png"
     },
     {
         ...groupBaseOption,
+        ...regionBaseOption,
         "name": "韩国节点",
-        "type": "url-test",
-        "tolerance": 0,
-        "include-all": true,
         "filter": "(?i)🇰🇷|韩国|(\b(KR|Korea)\b)",
         "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png"
       },
     {
       ...groupBaseOption,
+      ...regionBaseOption,
       "name": "台湾节点",
-      "type": "url-test",
-      "tolerance": 0,
-      "include-all": true,
       "filter": "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png"
     }
@@ -247,91 +244,76 @@ function main(config) {
   config["rule-providers"] = {
     "AD": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list",
       "path": "./rule-providers/AD.list"
     },
     "Apple": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list",
       "path": "./rule-providers/Apple.list"
     },
     "Google": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list",
       "path": "./rule-providers/Google.list"
     },
     "YouTube": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list",
       "path": "./rule-providers/YouTube.list"
     },
     "Telegram": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list",
       "path": "./rule-providers/Telegram.list"
     },
     "Twitter": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list",
       "path": "./rule-providers/Twitter.list"
     },
     "Steam": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list",
       "path": "./rule-providers/Steam.list"
     },
     "Epic": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list",
       "path": "./rule-providers/Epic.list"
     },
     "AI": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/AI.list",
       "path": "./rule-providers/AI.list"
     },
     "OneDrive": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list",
       "path": "./rule-providers/OneDrive.list"
     },
     "Github": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Github.list",
       "path": "./rule-providers/Github.list"
     },
     "Microsoft": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Microsoft.list",
       "path": "./rule-providers/Microsoft.list"
     },
     "Lan": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list",
       "path": "./rule-providers/Lan.list"
     },
     "ProxyGFW": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list",
       "path": "./rule-providers/ProxyGFW.list"
     },
     "China": {
       ...ruleProviderCommon,
-      "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/ChinaDomain.list",
       "path": "./rule-providers/China.list"
     }
