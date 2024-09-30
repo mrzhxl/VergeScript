@@ -1,4 +1,4 @@
-// 最后更新时间: 2024-09-26
+// 最后更新时间: 2024-09-30
 
 // 规则集通用配置
 const ruleProviderCommon = {
@@ -119,31 +119,17 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "国外网站",
+      "name": "AI",
       "type": "select",
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png"
+      "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png"
     },
     {
       ...groupBaseOption,
-      "name": "苹果服务",
+      "name": "GitHub",
       "type": "select",
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png"
-    },
-    {
-        ...groupBaseOption,
-        "name": "GitHub",
-        "type": "select",
-        "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
-        "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png"
-      },
-    {
-      ...groupBaseOption,
-      "name": "微软服务",
-      "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png"
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png"
     },
     {
       ...groupBaseOption,
@@ -154,10 +140,31 @@ function main(config) {
     },
     {
       ...groupBaseOption,
+      "name": "苹果服务",
+      "type": "select",
+      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png"
+    },
+    {
+      ...groupBaseOption,
+      "name": "微软服务",
+      "type": "select",
+      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png"
+    },
+    {
+      ...groupBaseOption,
       "name": "电报消息",
       "type": "select",
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
+    },
+    {
+      ...groupBaseOption,
+      "name": "国外网站",
+      "type": "select",
+      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png"
     },
     {
       ...groupBaseOption,
@@ -168,18 +175,11 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "AI",
-      "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png"
-    },    
-    {
-      ...groupBaseOption,
       "name": "游戏平台",
       "type": "select",
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png"
-    },    
+    },
     {
       ...groupBaseOption,
       "name": "广告拦截",
@@ -224,12 +224,12 @@ function main(config) {
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png"
     },
     {
-        ...groupBaseOption,
-        ...regionBaseOption,
-        "name": "韩国节点",
-        "filter": "(?i)🇰🇷|韩国|(\b(KR|Korea)\b)",
-        "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png"
-      },
+      ...groupBaseOption,
+      ...regionBaseOption,
+      "name": "韩国节点",
+      "filter": "(?i)🇰🇷|韩国|(\b(KR|Korea)\b)",
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png"
+    },
     {
       ...groupBaseOption,
       ...regionBaseOption,
