@@ -101,16 +101,16 @@ function main(config) {
   config["proxy-groups"] = [
     {
       ...groupBaseOption,
-      "name": "手动切换",
+      "name": "🚀 手动切换",
       "type": "select",
       "include-all": true,
       "exclude-filter": "(?i)应急|剩余|过期",
-      "proxies": ["自动切换"],
+      "proxies": ["♻️ 自动切换"],
       "icon": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png"
     },
     {
       ...groupBaseOption,
-      "name": "自动切换",
+      "name": "♻️ 自动切换",
       "type": "url-test",
       "tolerance": 50,
       "include-all": true,
@@ -119,122 +119,122 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "AI",
+      "name": "💬 AI",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png"
     },
     {
       ...groupBaseOption,
-      "name": "GitHub",
+      "name": "🐱 GitHub",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png"
     },
     {
       ...groupBaseOption,
-      "name": "谷歌服务",
+      "name": "🔍 谷歌服务",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png"
     },
     {
       ...groupBaseOption,
-      "name": "苹果服务",
+      "name": "🍎 苹果服务",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png"
     },
     {
       ...groupBaseOption,
-      "name": "微软服务",
+      "name": "Ⓜ️ 微软服务",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png"
     },
     {
       ...groupBaseOption,
       "name": "电报消息",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
     },
     {
       ...groupBaseOption,
-      "name": "国外网站",
+      "name": "🌍 国外网站",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png"
     },
     {
       ...groupBaseOption,
       "name": "推特消息",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png"
     },
     {
       ...groupBaseOption,
-      "name": "游戏平台",
+      "name": "🎮 游戏平台",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png"
     },
     {
       ...groupBaseOption,
-      "name": "广告拦截",
+      "name": "🛑 广告拦截",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png"
     },
     {
       ...groupBaseOption,
-      "name": "漏网之鱼",
+      "name": "🐟 漏网之鱼",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "韩国节点", "DIRECT"],
+      "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png"
     },
     // 地区分组
     {
       ...groupBaseOption,
       ...regionBaseOption,
-      "name": "香港节点",
+      "name": "🇭🇰 香港节点",
       "filter": "(?i)🇭🇰|香港|(\b(HK|Hong)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"
     },
     {
       ...groupBaseOption,
       ...regionBaseOption,
-      "name": "美国节点",
+      "name": "🇺🇸 美国节点",
       "filter": "(?i)🇺🇸|美国|(\b(US|United States)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png"
     },
     {
       ...groupBaseOption,
       ...regionBaseOption,
-      "name": "狮城节点",
+      "name": "🇸🇬 狮城节点",
       "filter": "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png"
     },
     {
       ...groupBaseOption,
       ...regionBaseOption,
-      "name": "日本节点",
+      "name": "🇯🇵 日本节点",
       "filter": "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png"
     },
     {
       ...groupBaseOption,
       ...regionBaseOption,
-      "name": "韩国节点",
+      "name": "🇰🇷 韩国节点",
       "filter": "(?i)🇰🇷|韩国|(\b(KR|Korea)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png"
     },
     {
       ...groupBaseOption,
       ...regionBaseOption,
-      "name": "台湾节点",
-      "filter": "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)",
+      "name": "🇼🇸 台湾节点",
+      "filter": "(?i)🇨🇳｜🇼🇸|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png"
     }
   ];
@@ -320,23 +320,23 @@ function main(config) {
 
   // 覆盖规则
   config["rules"] = [
-    "RULE-SET,AD,广告拦截",
-    "RULE-SET,AI,AI",
-    "RULE-SET,Apple,苹果服务",
-    "RULE-SET,YouTube,谷歌服务",
-    "RULE-SET,Google,谷歌服务",
+    "RULE-SET,AD,🛑 广告拦截",
+    "RULE-SET,AI,💬 AI",
+    "RULE-SET,Apple,🍎 苹果服务",
+    "RULE-SET,YouTube,🔍 谷歌服务",
+    "RULE-SET,Google,🔍 谷歌服务",
     "RULE-SET,Telegram,电报消息",
     "RULE-SET,Twitter,推特消息",
-    "RULE-SET,Steam,游戏平台",
-    "RULE-SET,Epic,游戏平台",
-    "RULE-SET,OneDrive,微软服务",
-    "GEOSITE,Github,GitHub",
-    "RULE-SET,Microsoft,微软服务",
-    "GEOSITE,gfw,国外网站",
+    "RULE-SET,Steam,🎮 游戏平台",
+    "RULE-SET,Epic,🎮 游戏平台",
+    "RULE-SET,OneDrive,Ⓜ️ 微软服务",
+    "GEOSITE,Github,🐱 GitHub",
+    "RULE-SET,Microsoft,Ⓜ️ 微软服务",
+    "GEOSITE,gfw,🌍 国外网站",
     "RULE-SET,China,DIRECT",
     "GEOIP,lan,DIRECT",
     "GEOIP,CN,DIRECT",
-    "MATCH,漏网之鱼"
+    "MATCH,🐟 漏网之鱼"
   ];
 
   // 返回修改后的配置
