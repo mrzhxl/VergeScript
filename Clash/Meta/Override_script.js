@@ -154,7 +154,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "电报消息",
+      "name": "📱 电报消息",
       "type": "select",
       "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
@@ -168,7 +168,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "推特消息",
+      "name": "🕊 推特消息",
       "type": "select",
       "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png"
@@ -325,8 +325,8 @@ function main(config) {
     "RULE-SET,Apple,🍎 苹果服务",
     "RULE-SET,YouTube,🔍 谷歌服务",
     "RULE-SET,Google,🔍 谷歌服务",
-    "RULE-SET,Telegram,电报消息",
-    "RULE-SET,Twitter,推特消息",
+    "RULE-SET,Telegram,📱 电报消息",
+    "RULE-SET,Twitter,🕊 推特消息",
     "RULE-SET,Steam,🎮 游戏平台",
     "RULE-SET,Epic,🎮 游戏平台",
     "RULE-SET,OneDrive,Ⓜ️ 微软服务",
