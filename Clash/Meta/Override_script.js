@@ -242,6 +242,21 @@ function main(config) {
       "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/BanProgramAD.list",
       "path": "./rule-providers/BanProgramAD.list"
     },
+    "BanEasyListChina": {
+      ...ruleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/BanEasyListChina.list",
+      "path": "./rule-providers/BanEasyListChina.list"
+    },
+    "BanEasyPrivacy": {
+      ...ruleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/BanEasyPrivacy.list",
+      "path": "./rule-providers/BanEasyPrivacy.list"
+    },
+    "BanEasyList": {
+      ...ruleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/BanEasyList.list",
+      "path": "./rule-providers/BanEasyList.list"
+    },
     "Apple": {
       ...ruleProviderCommon,
       "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Apple.list",
@@ -328,6 +343,9 @@ function main(config) {
   config["rules"] = [
     "RULE-SET,BanAD,🛑 广告拦截",
     "RULE-SET,BanProgramAD,🛑 广告拦截",
+    "RULE-SET,BanEasyListChina,🛑 广告拦截",
+    "RULE-SET,BanEasyPrivacy,🛑 广告拦截",
+    "RULE-SET,BanEasyList,🛑 广告拦截",
     "RULE-SET,AI,💬 AI",
     "RULE-SET,Apple,🍎 苹果服务",
     "RULE-SET,YouTube,🔍 谷歌服务",
