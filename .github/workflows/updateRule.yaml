@@ -45,6 +45,7 @@ jobs:
         curl -L -o rules/Clash/Meta/Rules/Private_ip.list "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/classical/private.list"
         # telegram
         curl -L -o rules/Clash/Meta/Rules/Telegram.list "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/telegram.list"
+        curl -L -o rules/Clash/Meta/Rules/Telegram_ip.list "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/classical/telegram.list"
         # 广告
         curl -L -o rules/Clash/Meta/Rules/BanAD.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
         curl -L -o rules/Clash/Meta/Rules/BanProgramAD.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"

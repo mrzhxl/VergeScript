@@ -277,6 +277,11 @@ function main(config) {
       "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Telegram.list",
       "path": "./rule-providers/Telegram.list"
     },
+    "Telegram_ip": {
+      ...ruleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Telegram_ip.list",
+      "path": "./rule-providers/Telegram_ip.list"
+    },
     "Steam": {
       ...ruleProviderCommon,
       "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Steam.list",
@@ -351,6 +356,7 @@ function main(config) {
     "RULE-SET,YouTube,🔍 谷歌服务",
     "RULE-SET,Google,🔍 谷歌服务",
     "RULE-SET,Telegram,📱 电报消息",
+    "RULE-SET,Telegram_ip,📱 电报消息",
     "RULE-SET,Steam,🎮 游戏平台",
     "RULE-SET,Epic,🎮 游戏平台",
     "RULE-SET,Game,🎮 游戏平台",
