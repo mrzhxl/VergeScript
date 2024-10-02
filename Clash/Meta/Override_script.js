@@ -39,9 +39,7 @@ function main(config) {
   config["log-level"] = "info";
   config["find-process-mode"] = "strict";
   config["global-client-fingerprint"] = "chrome";
-  config["external-controller"] = "127.0.0.1:9090";
-  config["external-ui"] = "ui";
-  config["external-ui-url"] = "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip";
+
 
   // 覆盖 dns 配置
   config["dns"] = {
@@ -165,13 +163,6 @@ function main(config) {
       "type": "select",
       "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "🕊 推特消息",
-      "type": "select",
-      "proxies": ["🚀 手动切换", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇸🇬 狮城节点", "🇯🇵 日本节点", "🇼🇸 台湾节点", "🇰🇷 韩国节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png"
     },
     {
       ...groupBaseOption,
@@ -312,7 +303,7 @@ function main(config) {
       "path": "./rule-providers/Private_ip.list"
     },
     "ProxyGFW": {
-      ...ruProxyGFWleProviderCommon,
+      ...ruleProviderCommon,
       "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/ProxyGFW.list",
       "path": "./rule-providers/ProxyGFW.list"
     },
