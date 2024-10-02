@@ -241,101 +241,118 @@ function main(config) {
 
   // 覆盖规则集
   config["rule-providers"] = {
-    "AD": {
+    "BanAD": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list",
-      "path": "./rule-providers/AD.list"
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/BanAD.list",
+      "path": "./rule-providers/BanAD.list"
+    },
+    "BanProgramAD": {
+      ...ruleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/BanProgramAD.list",
+      "path": "./rule-providers/BanProgramAD.list"
     },
     "Apple": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list",
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Apple.list",
       "path": "./rule-providers/Apple.list"
     },
     "Google": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list",
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Google.list",
       "path": "./rule-providers/Google.list"
     },
     "YouTube": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list",
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/YouTube.list",
       "path": "./rule-providers/YouTube.list"
     },
     "Telegram": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list",
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Telegram.list",
       "path": "./rule-providers/Telegram.list"
-    },
-    "Twitter": {
-      ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list",
-      "path": "./rule-providers/Twitter.list"
     },
     "Steam": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list",
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Steam.list",
       "path": "./rule-providers/Steam.list"
     },
     "Epic": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list",
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Epic.list",
       "path": "./rule-providers/Epic.list"
+    },
+    "Game": {
+      ...ruleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Game.list",
+      "path": "./rule-providers/Game.list"
     },
     "AI": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/AI.list",
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/AI.list",
       "path": "./rule-providers/AI.list"
     },
     "OneDrive": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list",
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/OneDrive.list",
       "path": "./rule-providers/OneDrive.list"
     },
     "Github": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Github.list",
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Github.list",
       "path": "./rule-providers/Github.list"
     },
     "Microsoft": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Microsoft.list",
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Microsoft.list",
       "path": "./rule-providers/Microsoft.list"
     },
-    "Lan": {
+    "Private_ip": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list",
-      "path": "./rule-providers/Lan.list"
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Private_ip.list",
+      "path": "./rule-providers/Private_ip.list"
     },
     "ProxyGFW": {
-      ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list",
+      ...ruProxyGFWleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/ProxyGFW.list",
       "path": "./rule-providers/ProxyGFW.list"
     },
-    "China": {
+    "Cn": {
       ...ruleProviderCommon,
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/ChinaDomain.list",
-      "path": "./rule-providers/China.list"
-    }
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Cn.list",
+      "path": "./rule-providers/Cn.list"
+    },
+    "Cn_ip": {
+      ...ruleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Cn_ip.list",
+      "path": "./rule-providers/Cn_ip.list"
+    },
+    "NotCn": {
+      ...ruleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/NotCn.list",
+      "path": "./rule-providers/NotCn.list"
+    },
   };
 
   // 覆盖规则
   config["rules"] = [
-    "RULE-SET,AD,🛑 广告拦截",
+    "RULE-SET,BanAD,🛑 广告拦截",
+    "RULE-SET,BanProgramAD,🛑 广告拦截",
     "RULE-SET,AI,💬 AI",
     "RULE-SET,Apple,🍎 苹果服务",
     "RULE-SET,YouTube,🔍 谷歌服务",
     "RULE-SET,Google,🔍 谷歌服务",
     "RULE-SET,Telegram,📱 电报消息",
-    "RULE-SET,Twitter,🕊 推特消息",
     "RULE-SET,Steam,🎮 游戏平台",
     "RULE-SET,Epic,🎮 游戏平台",
+    "RULE-SET,Game,🎮 游戏平台",
     "RULE-SET,OneDrive,Ⓜ️ 微软服务",
-    "GEOSITE,Github,🐱 GitHub",
+    "RULE-SET,Github,🐱 GitHub",
     "RULE-SET,Microsoft,Ⓜ️ 微软服务",
-    "GEOSITE,gfw,🌍 国外网站",
-    "RULE-SET,China,DIRECT",
-    "GEOIP,lan,DIRECT",
-    "GEOIP,CN,DIRECT",
+    "RULE-SET,ProxyGFW,🌍 国外网站",
+    "RULE-SET,NotCn,🌍 国外网站",
+    "RULE-SET,Cn,DIRECT",
+    "RULE-SET,Cn_ip,DIRECT",
+    "RULE-SET,Private_ip,DIRECT",
     "MATCH,🐟 漏网之鱼"
   ];
 

@@ -6,7 +6,7 @@ on:
     - cron: "* */1 * * *"
   
 jobs:
-  Fork-FLITER-list:
+  Update-Rule:
     runs-on: ubuntu-latest
     env:
       TZ: 'Asia/Shanghai'
