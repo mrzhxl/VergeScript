@@ -19,43 +19,47 @@ jobs:
       with:
         repository: mrzhxl/ScriptRules
         path: rules
-
     - name: Download files
       run: |
         mkdir -p rules/Clash/Meta/Rules
-        # 苹果
-        curl -L -o rules/Clash/Meta/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
-        # 谷歌
-        curl -L -o rules/Clash/Meta/Rules/YouTube.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
-        curl -L -o rules/Clash/Meta/Rules/Google.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
-        # AI
-        curl -L -o rules/Clash/Meta/Rules/AI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
-        # 微软
-        curl -L -o rules/Clash/Meta/Rules/Github.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list"
-        curl -L -o rules/Clash/Meta/Rules/OneDrive.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
-        curl -L -o rules/Clash/Meta/Rules/Microsoft.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
-        # GFW
-        curl -L -o rules/Clash/Meta/Rules/ProxyGFW.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
-        # 游戏规则 
-        curl -L -o rules/Clash/Meta/Rules/Game.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
-        curl -L -o rules/Clash/Meta/Rules/Steam.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
-        curl -L -o rules/Clash/Meta/Rules/Epic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
-        # cn
-        curl -L -o rules/Clash/Meta/Rules/Cn_ip.list "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/classical/cn.list"
-        curl -L -o rules/Clash/Meta/Rules/Cn.list "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/cn.list"
-        # private
-        curl -L -o rules/Clash/Meta/Rules/Private_ip.list "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/classical/private.list"
-        # telegram
-        curl -L -o rules/Clash/Meta/Rules/Telegram.list "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/telegram.list"
-        curl -L -o rules/Clash/Meta/Rules/Telegram_ip.list "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/classical/telegram.list"
-        # 广告
-        curl -L -o rules/Clash/Meta/Rules/BanAD.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
-        curl -L -o rules/Clash/Meta/Rules/BanProgramAD.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"
-        curl -L -o rules/Clash/Meta/Rules/BanEasyListChina.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list"
-        curl -L -o rules/Clash/Meta/Rules/BanEasyPrivacy.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list"
-        curl -L -o rules/Clash/Meta/Rules/BanEasyList.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list"
-        # not cn
-        curl -L -o rules/Clash/Meta/Rules/NotCn.list "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/geolocation-!cn.list"
+        declare -A urls=(
+          # 苹果
+          ["Apple.list"]="https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
+          # 谷歌
+          ["YouTube.list"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+          ["Google.list"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
+          # AI
+          ["AI.list"]="https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
+          # 微软
+          ["Github.list"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list"
+          ["OneDrive.list"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
+          ["Microsoft.list"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
+          # GFW
+          ["ProxyGFW.list"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+          ["NotCn.list"]="https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/geolocation-!cn.list"
+          # 游戏规则 
+          ["Game.list"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
+          ["Steam.list"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
+          ["Epic.list"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
+          # cn
+          ["Cn_ip.list"]="https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/classical/cn.list"
+          ["Cn.list"]="https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/cn.list"
+          # private
+          ["Private_ip.list"]="https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/classical/private.list"
+          # telegram
+          ["Telegram.list"]="https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/telegram.list"
+          ["Telegram_ip.list"]="https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/classical/telegram.list"
+          # 广告
+          ["BanAD.list"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
+          ["BanProgramAD.list"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"
+          ["BanEasyListChina.list"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list"
+          ["BanEasyPrivacy.list"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list"
+          ["BanEasyList.list"]="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list"
+        )
+
+        for file in "${!urls[@]}"; do
+          curl -L -o rules/Clash/Meta/Rules/$file "${urls[$file]}"
+        done
     # 适配规则
     - name: Edit rules
       run: |
