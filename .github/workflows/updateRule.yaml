@@ -4,7 +4,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "01 */1 * * *"
-  
+  push:               
+    branches:
+      - main
 jobs:
   Update-Rule:
     runs-on: ubuntu-latest
