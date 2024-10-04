@@ -1,6 +1,7 @@
 # 广告列表 adblock rules
 # 内容：EasyPrivacy列表，隐私保护，屏蔽隐私追踪
-# 来源：https:
+# 来源：https://easylist-downloads.adblockplus.org/easyprivacy.txt
+# 更新：2024-08-27 13:51:12
 # 数量：38999条
 
 DOMAIN-SUFFIX,0.myikas.com
@@ -5573,7 +5574,7 @@ DOMAIN-SUFFIX,antitracking.owncast.online
 DOMAIN-SUFFIX,antonsystems.actonservice.com
 DOMAIN-SUFFIX,antwort.hager.de
 DOMAIN-SUFFIX,anz7.allianz-voyage.fr
-DOMAIN-SUFFIX,ao-freeGEOIP.herokuapp.com
+DOMAIN-SUFFIX,ao-freegeoip.herokuapp.com
 DOMAIN-SUFFIX,ao-marketing.dbiyes.com
 DOMAIN-SUFFIX,ao-marketing.essendant.com
 DOMAIN-SUFFIX,ao-mkt.tableausoftware.com
@@ -12832,14 +12833,14 @@ DOMAIN-SUFFIX,geo.xcel.io
 DOMAIN-SUFFIX,geo.yahoo.com
 DOMAIN-SUFFIX,geobar.ziffdavisinternational.com
 DOMAIN-SUFFIX,geoedge.be
-DOMAIN-SUFFIX,GEOIP.apps.avada.io
-DOMAIN-SUFFIX,GEOIP.ativo.com
-DOMAIN-SUFFIX,GEOIP.boredpanda.com
-DOMAIN-SUFFIX,GEOIP.finanzen.net
-DOMAIN-SUFFIX,GEOIP.hmageo.com
-DOMAIN-SUFFIX,GEOIP.ifunny.co
-DOMAIN-SUFFIX,GEOIP.instiengage.com
-DOMAIN-SUFFIX,GEOIP.nekudo.com
+DOMAIN-SUFFIX,geoip.apps.avada.io
+DOMAIN-SUFFIX,geoip.ativo.com
+DOMAIN-SUFFIX,geoip.boredpanda.com
+DOMAIN-SUFFIX,geoip.finanzen.net
+DOMAIN-SUFFIX,geoip.hmageo.com
+DOMAIN-SUFFIX,geoip.ifunny.co
+DOMAIN-SUFFIX,geoip.instiengage.com
+DOMAIN-SUFFIX,geoip.nekudo.com
 DOMAIN-SUFFIX,geolocation.forbes.com
 DOMAIN-SUFFIX,geolocation.outreach.com
 DOMAIN-SUFFIX,geonetric.actonservice.com
