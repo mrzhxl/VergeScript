@@ -297,10 +297,25 @@ function main(config) {
       "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Game.list",
       "path": "./rule-providers/Game.list"
     },
-    "AI": {
+    "OpenAI": {
       ...ruleProviderCommon,
-      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/AI.list",
-      "path": "./rule-providers/AI.list"
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/OpenAI.list",
+      "path": "./rule-providers/OpenAI.list"
+    },
+    "Gemini": {
+      ...ruleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Gemini.list",
+      "path": "./rule-providers/Gemini.list"
+    },
+    "Copilot": {
+      ...ruleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Copilot.list",
+      "path": "./rule-providers/Copilot.list"
+    },
+    "Claude": {
+      ...ruleProviderCommon,
+      "url": "https://raw.githubusercontent.com/mrzhxl/ScriptRules/main/Clash/Meta/Rules/Claude.list",
+      "path": "./rule-providers/Claude.list"
     },
     "OneDrive": {
       ...ruleProviderCommon,
@@ -351,7 +366,10 @@ function main(config) {
     "RULE-SET,BanEasyListChina,🛑 广告拦截",
     "RULE-SET,BanEasyPrivacy,🛑 广告拦截",
     "RULE-SET,BanEasyList,🛑 广告拦截",
-    "RULE-SET,AI,💬 AI",
+    "RULE-SET,OpenAI,💬 AI",
+    "RULE-SET,Gemini,💬 AI",
+    "RULE-SET,Copilot,💬 AI",
+    "RULE-SET,Claude,💬 AI",
     "RULE-SET,Apple,🍎 苹果服务",
     "RULE-SET,YouTube,🔍 谷歌服务",
     "RULE-SET,Google,🔍 谷歌服务",
