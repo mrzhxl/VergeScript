@@ -3,7 +3,7 @@ name: updateRule
 on:
   workflow_dispatch:
   schedule:
-    - cron: "01 */1 * * *"
+    - cron: "0 22-23,0-8 * * *"
   push:               
     branches:
       - main
